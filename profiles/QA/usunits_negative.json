@@ -1,0 +1,17 @@
+{
+	"Adult_Male" : {
+		"Age" : 83,
+		"Gender" : "male",
+		"Height" : { "Feet" : 5, "Inches" : 11 },
+		"Weight" : 160,
+		"Activity" : "Moderate: exercise 4-5 times/week"
+	},
+		
+	"Teen_Male" : {
+		"Age" : 85,
+		"Gender" : "male",
+		"Height" : { "Feet" : 5, "Inches" : 4 },
+		"Weight" : 125,
+		"Activity" : "Moderate: exercise 4-5 times/week"	
+	}
+}
