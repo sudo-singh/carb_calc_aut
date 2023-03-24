@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
  * Wrapper class for Element actions done by the WebDriver
  * </p>
  * Can add custom Exceptions as well as loggers for each and every element action
- * @author Singh
+ * @author sudosingh
  *
  */
 public class ElementActions {
@@ -46,6 +46,11 @@ public class ElementActions {
 		}
 	}
 	
+	/**
+	 * JavaScriptExecutor for edge cases where element is not clickable 
+	 * @param element
+	 * @param driver
+	 */
 	public static void jsClick(WebElement element, WebDriver driver) {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", element);

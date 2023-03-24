@@ -87,3 +87,12 @@ Here tagName specifies all the cucumber scenario's with that partiacular tag
 
 If on a Linux/MacOS
 >./simpleRunner.sh tagName
+
+### TO-DO
+- Add Stringified keywords as Enums in Page Classes to improve readability
+- Improve the JSONParserUtil, and the hierarchy structure of test data itself
+- Add more values to Context at runtime to reduce whatever hardcoding is there
+- Add multiple Capabilities to Driver Instance, to incorporate headless browsing etc.
+- Improve shell script to provide multiple cucumber overriding options
+- Set global wait times and other variables to remove flakiness
+- Add reporting and Email Util

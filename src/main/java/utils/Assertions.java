@@ -7,7 +7,7 @@ import org.testng.asserts.Assertion;
  * <p>
  * Wrapper class for Assertions to be used throughout the framework
  * </p>
- * @author Singh
+ * @author sudosingh
  *
  */
 public class Assertions {
@@ -24,11 +24,19 @@ public class Assertions {
         //TODO: Add Implementation 
     }
 	
+	/**
+	 * Assert visibility of provided element
+	 * @param element Element to be checked
+	 */
 	public static void assertElementVisible(WebElement element) {
 		Assertion assertCondition = new Assertion();
 		assertCondition.assertTrue(element.isDisplayed());
 	}
 	
+	/**
+	 * Assert non-visibility of an element
+	 * @param element
+	 */
 	public static void assertElementNotVisible(WebElement element) {
 		Assertion assertCondition = new Assertion();
 		assertCondition.assertFalse(element.isDisplayed());

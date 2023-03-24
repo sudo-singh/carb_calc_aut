@@ -9,7 +9,7 @@ import enums.ContextEnum;
  * Initializes and manages various {@link Enum} specific to the running scenario<br>
  * Valid for a single scenario run lifecycle
  * </p>
- * @author Akashdeep Singh
+ * @author sudosingh
  */
 public class ScenarioContext {
 

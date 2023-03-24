@@ -5,10 +5,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-import java.util.Set;
 
 /**
  * Utility class provides the methods to read write the property files.
+ * @author sudosingh
  */
 public class PropertyUtil {
 
@@ -95,13 +95,6 @@ public class PropertyUtil {
 	}
 
 	/**
-	 * Clears this Properties object so that it contains no keys.
-	 */
-	public void clear() {
-		properties.clear();
-	}
-
-	/**
 	 * Reads from the property file and provides the values of specified key.
 	 *
 	 * @param key
@@ -111,38 +104,4 @@ public class PropertyUtil {
 	public String getValue(String key) {
 		return properties.getProperty(key).trim();
 	}
-
-	/**
-	 * Reads from the property file and provides the values of specified key, but if
-	 * that key is not present then it will return the default value.
-	 *
-	 * @param key
-	 *            The key whose value is required to be read.
-	 * @param defaultValue
-	 *            a defaultValue of the specified key if that key is not present or
-	 * @return The value of specified key or the default value.
-	 */
-	public String getValue(String key, String defaultValue) {
-		return properties.getProperty(key, defaultValue).trim();
-	}
-
-	/**
-	 * Sets the value of specified key in the property file.
-	 *
-	 * @param key
-	 *            The key whose values is required to be set.
-	 * @param value
-	 *            The value that needed to be set for the specified key.
-	 */
-	public void setValue(String key, String value) {
-		properties.setProperty(key, value);
-	}
-
-	/**
-	 * Returns the keyset of the property file.
-	 */
-	public Set<Object> getKeySet() {
-		return properties.keySet();
-	}
-
 }

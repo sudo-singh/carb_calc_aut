@@ -15,6 +15,11 @@ import io.cucumber.java.en.When;
 import pages.CarbCalcPage;
 import runner.TestRunner;
 
+/**
+ * Step definitions for the Carbohydrate Calculator page of the application
+ * @author sudosingh
+ *
+ */
 public class CarbohydrateCalculator extends TestRunner{
 	
 	WebDriver driver;
@@ -43,6 +48,7 @@ public class CarbohydrateCalculator extends TestRunner{
     public void enterTestData(String dataType, String indType) throws InterruptedException, StreamReadException, DatabindException, IOException {
 		CarbCalcPage ccp = (CarbCalcPage) context.scenarioContext.getContext(ContextEnum.CURRENT_CLASS_OBJECT);
 		ccp.addCharacterData(dataType, indType);
+		context.scenarioContext.setContext(ContextEnum.INVALID_ENTRY, dataType);
 		context.scenarioContext.setContext(ContextEnum.CURRENT_CLASS_OBJECT, ccp);
     }
 	

@@ -10,6 +10,11 @@ import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
+/**
+ * TestNG and Cucumber setup
+ * @author sudosingh
+ *
+ */
 @CucumberOptions(
 		features = "src/test/java/tests",
 		glue = {"stepDefs","runner"},

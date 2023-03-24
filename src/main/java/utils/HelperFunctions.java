@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * <p>
  * Common functions that can be used throughout the tests
  * </p>
- * @author Singh
+ * @author sudosingh
  *
  */
 public class HelperFunctions {

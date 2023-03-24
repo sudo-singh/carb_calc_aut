@@ -9,11 +9,21 @@ import io.cucumber.testng.TestNGCucumberRunner;
 import utils.HelperFunctions;
 import utils.ThisResources;
 
+/**
+ * Instantiates Browser and driver
+ * @author sudosingh
+ *
+ */
 public class BrowserAndTestManager {
 	
 	protected TestNGCucumberRunner testNGCucumberRunner;
 	public static WebDriver driver;
 	
+	/**
+	 * Sets browser type with desired capabilities
+	 * @param browserType The input from xml, can be overridden from shell file 
+	 * @throws Exception
+	 */
 	public void initialiseBrowserInstance(String browserType) throws Exception {
 		if (HelperFunctions.getOSName().toLowerCase().indexOf("win") >= 0){
 			switch(browserType) {
@@ -46,6 +56,10 @@ public class BrowserAndTestManager {
 		driver.manage().window().maximize();
 	}
 	
+	/**
+	 * Sets up environment, brings up the home page of AUT
+	 * @param env
+	 */
 	public void setupEnvironment(String env) {
 		switch(env) {
 		case "QA":

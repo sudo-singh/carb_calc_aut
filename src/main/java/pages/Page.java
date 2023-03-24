@@ -4,6 +4,11 @@ import org.openqa.selenium.WebDriver;
 
 import utils.ThisResources;
 
+/**
+ * Parent Page class
+ * @author sudosingh
+ *
+ */
 public class Page {
 	
 	protected String pageUrl;

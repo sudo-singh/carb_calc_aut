@@ -6,6 +6,7 @@ public ScenarioContext scenarioContext;
 	/**
 	 * <p>
 	 * Assigns object references to the context reference variables
+	 * @author sudosingh
 	 * </p> 
 	 */
 	public ContextMap(){
